@@ -1,65 +1,38 @@
-<p align="center">
-  <img src="diagram/ERD.png" width="1000">
-</p>
-
 # Mandiri DB Technical Test
 
 ## Overview
 
 Technical Test untuk perancangan aplikasi Pinjaman Online (Fintech Lending Platform) menggunakan pendekatan **Microservices Architecture**.
 
-Dokumen ini mencakup:
-
-* High Level Architecture
-* Screen Flow Design
-* Entity Relationship Diagram (ERD)
-* API Design
-* UML Sequence Diagram
-* Flowchart Business Process
-* Mobile App Screen Behavior
-
 ---
-
-## Business Requirements
-
-Aplikasi memungkinkan pengguna untuk:
-
-* Registrasi menggunakan email dan nomor telepon
-* Verifikasi OTP
-* Upload KTP dan Selfie untuk proses KYC
-* Login menggunakan Password atau Biometric
-* Mengajukan pinjaman hingga Rp12.000.000
-* Melihat status pengajuan pinjaman
-* Melihat sisa hutang dan tagihan
-* Melakukan pembayaran cicilan
-* Menerima notifikasi Email, SMS, dan Push Notification
-
----
-
-# Architecture Design
 
 ## Technology Stack
 
-| Layer             | Technology                           |
-| ----------------- | ------------------------------------ |
-| Mobile App        | Flutter                              |
-| API Gateway       | Kong Gateway / Spring Cloud Gateway  |
-| Backend Service   | Spring Boot                          |
-| Database          | PostgreSQL                           |
-| Cache             | Redis                                |
-| Message Broker    | RabbitMQ                             |
-| Authentication    | JWT                                  |
-| Password Security | BCrypt                               |
-| Notification      | Email, SMS, Firebase Cloud Messaging |
-| KYC Verification  | OCR, Face Recognition, SLIK OJK      |
+| Layer              | Technology                                   |
+| ------------------ | -------------------------------------------- |
+| Mobile Application | Flutter                                      |
+| API Gateway        | Kong Gateway / Spring Cloud Gateway          |
+| Backend Services   | Spring Boot                                  |
+| Database           | PostgreSQL                                   |
+| Cache              | Redis                                        |
+| Message Broker     | RabbitMQ                                     |
+| Authentication     | JWT                                          |
+| Notification       | Email, SMS Gateway, Firebase Cloud Messaging |
+| KYC                | OCR, Face Recognition, SLIK OJK              |
 
 ---
 
 # Entity Relationship Diagram (ERD)
 
-<p align="center">
-  <img src="diagram/ERD.png" width="1000">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/ERD.png" width="1000">
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -67,55 +40,103 @@ Aplikasi memungkinkan pengguna untuk:
 
 ## Authentication & Registration Flow
 
-<p align="center">
-  <img src="diagram/Screen Flow Authentication & Registration Flow.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Screen Flow Authentication & Registration Flow.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ## Loan Application Flow
 
-<p align="center">
-  <img src="diagram/Screen Flow oan Application Flow.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Screen Flow oan Application Flow.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ## Payment Flow
 
-<p align="center">
-  <img src="diagram/Screen Flow Payment Flow.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Screen Flow Payment Flow.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ## User Navigation Flow
 
-<p align="center">
-  <img src="diagram/Screen Flow User Navigation Flow.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Screen Flow User Navigation Flow.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ---
 
 # UML Sequence Diagram
 
-## Registrasi dan KYC
+## Registrasi & KYC
 
-<p align="center">
-  <img src="diagram/UML Sequence Diagram Registrasi & KYC.png" width="1000">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/UML Sequence Diagram Registrasi & KYC.png" width="1000">
+
+</td>
+</tr>
+</table>
 
 ## Pengajuan Pinjaman
 
-<p align="center">
-  <img src="diagram/UML Sequence Diagram Pengajuan Pinjaman.png" width="1000">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/UML Sequence Diagram Pengajuan Pinjaman.png" width="1000">
+
+</td>
+</tr>
+</table>
 
 ## Approval Pinjaman
 
-<p align="center">
-  <img src="diagram/UML Sequence Diagram Approval Pinjaman.png" width="1000">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/UML Sequence Diagram Approval Pinjaman.png" width="1000">
+
+</td>
+</tr>
+</table>
 
 ## Pembayaran Cicilan
 
-<p align="center">
-  <img src="diagram/UML Sequence Diagram Pembayaran Cicilan.png" width="1000">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/UML Sequence Diagram Pembayaran Cicilan.png" width="1000">
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -123,19 +144,31 @@ Aplikasi memungkinkan pengguna untuk:
 
 ## Validasi Pengajuan Pinjaman
 
-<p align="center">
-  <img src="diagram/Flowchart Validasi Pengajuan Pinjaman.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Flowchart Validasi Pengajuan Pinjaman.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ## Logika Pembayaran
 
-<p align="center">
-  <img src="diagram/Flowchart Logika Pembayaran.png" width="700">
-</p>
+<table>
+<tr>
+<td bgcolor="white">
+
+<img src="diagram/Flowchart Logika Pembayaran.png" width="900">
+
+</td>
+</tr>
+</table>
 
 ---
 
-# Sample API Design
+# Sample API
 
 ## Register User
 
@@ -143,7 +176,7 @@ Aplikasi memungkinkan pengguna untuk:
 POST /api/v1/auth/register
 ```
 
-Request:
+Request
 
 ```json
 {
@@ -153,7 +186,7 @@ Request:
 }
 ```
 
-Response:
+Response
 
 ```json
 {
@@ -169,14 +202,6 @@ Response:
 
 ```http
 POST /api/v1/auth/verify-otp
-```
-
-Response:
-
-```json
-{
-  "status": "VERIFIED"
-}
 ```
 
 ---
@@ -205,7 +230,7 @@ POST /api/v1/payments
 
 ---
 
-# Security Design
+# Security Architecture
 
 * HTTPS TLS 1.3
 * JWT Authentication
@@ -213,13 +238,13 @@ POST /api/v1/payments
 * OTP Verification
 * Redis OTP Storage
 * Redis JWT Blacklist
-* Device Fingerprinting
 * OCR Validation
 * Face Recognition
 * SLIK OJK Validation
+* Device Fingerprinting
 * Rate Limiting menggunakan Redis
-* Idempotency Key untuk transaksi pembayaran
 * Audit Logging
+* Idempotency Key
 
 ---
 
@@ -228,19 +253,19 @@ POST /api/v1/payments
 * Microservices Architecture
 * Security by Design
 * ACID Transaction
-* Event Driven Architecture
 * Strong Consistency
+* Event Driven Architecture
 * High Availability
 * Scalability
 * Maintainability
 * Fault Isolation
-* Fraud Prevention First Approach
+* Fraud Prevention First
 
 ---
 
 # Full Documentation
 
-Dokumen lengkap dapat dilihat pada file:
+Dokumen lengkap tersedia pada:
 
 ```text
 docs/Technical test Mandiri DB.pdf
