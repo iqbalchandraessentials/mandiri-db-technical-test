@@ -1,3 +1,7 @@
+<div class="okee">
+  <img src="diagram/ERD.png" width="1000" style="background-color:white;">
+
+
 # Mandiri DB Technical Test
 
 ## Overview
@@ -241,3 +245,4 @@ Dokumen lengkap dapat dilihat pada file:
 ```text
 docs/Technical test Mandiri DB.pdf
 ```
+</div>
